@@ -1,3 +1,9 @@
+#label-create-robot {
+    display: block;
+    text-align: center;
+    font-size:160%;
+}
+
 .header {
     position: relative;
     padding-bottom: 100px;
@@ -6,6 +12,7 @@
 
 h2 {
     padding-left: 40px;
+
 
 }
 
@@ -21,44 +28,74 @@ h2 {
     height: 80px;
 }
 
+.img_good_luck {
+    float: left;
+    margin: -12px 15px 200px 7px;
+
+}
+
+
+.Form {
+    border-style: solid;
+
+
+
+}
+
 .factory-section {
+    height: 500px;
     border-style: solid;
     background-color: blanchedalmond;
+
 }
 
 .content-wrapper {
-    height:500px;
+
     display: flex;
-    background-color: blanchedalmond;
-    justify-content: space-around;
+    justify-content: left;
+    height: 400px;
 
 }
 
-.flexbox-item-1{
+.flexbox-item-1 {
     width: 350px;
-    height: 350px;
     background-color: white;
     border-style: solid;
-    margin: 30px 20px 30px -100px;
+    margin: 10px;
 
-    
 
 }
 
 .flexbox-item-2 {
+    width: 400px;
+    height: 100px;
     background-color: white;
     border-style: solid;
-    
+    margin: 10px;
+    transform: translate(380px, 5px);
+    position: fixed;
+    align-content: start;
+    text-align: left;
 
 }
 
 .flexbox-item-3 {
+    width: 400px;
+    height: 100px;
     background-color: white;
     border-style: solid;
-   
+    margin: 10px;
+    transform: translate(380px, 140px);
+    position: fixed;
+
 }
 
 .flexbox-item-4 {
+    width: 400px;
+    height: 100px;
     background-color: white;
     border-style: solid;
+    margin: 10px;
+    transform: translate(7px, 275px);
+
 }
