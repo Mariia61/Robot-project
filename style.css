@@ -8,26 +8,10 @@
     width: 150px;
     padding: 12px 20px;
     margin: 8px 0;
- 
+
 }
 
-.div-name{
-    float: left;
-margin: 10px;
-} 
-.div-type{
-    float: left;
 
-} 
-.div-color{
-    float:left;
-}
-.div-checkboxes{
-    float:left;
-}
-.div-comments{
-    float:left;
-}
 
 .header {
     position: relative;
@@ -63,12 +47,33 @@ h2 {
 .Form {
     border-style: solid;
     height: 300px;
+}
 
+.div-name {
+    float: left;
+    margin: 10px;
+}
 
+.div-type {
+    float: left;
 
 }
 
-.buttons{
+.div-color {
+    float: left;
+}
+
+.div-checkboxes {
+    float: left;
+}
+
+.div-comments {
+    float: left;
+}
+
+
+
+.buttons {
 
     transform: translate(0px, -15px);
 }
@@ -89,13 +94,95 @@ h2 {
 }
 
 .flexbox-item-1 {
-    width: 350px;
+    width: 420px;
     background-color: white;
     border-style: solid;
     margin: 10px;
+    text-align: center;
+
+}
+
+
+.circle-head {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    border-style: solid;
+    transform: translate(150%, -160%);
+
+}
+
+.circle-eye-1 {
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    border-style: solid;
+    transform: translate(900%, -1000%);
+}
+
+.circle-eye-2 {
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    border-style: solid;
+    transform: translate(730%, -1098%);
+}
+
+.trapezoid-body {
+    border-bottom: 100px solid #e96126;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    width: 60px;
+    transform: rotate(180deg) translate(-120%, -130%);
 
 
 }
+
+.rectangle-hand1 {
+    width: 100px;
+    height: 15px;
+    background: beige;
+    border: solid;
+    border-radius: 5px;
+    transform: rotate(90deg) translate(66%, -880%);
+}
+
+.rectangle-hand2 {
+    width: 100px;
+    height: 15px;
+    background: beige;
+    border: solid;
+    border-radius: 5px;
+    transform: rotate(90deg) translate(48%, -310%);
+}
+
+
+.rectangle-foot1 {
+    width: 80px;
+    height: 15px;
+    background: white;
+    border: solid;
+    transform: rotate(90deg) translate(143%, -543%);
+}
+
+.rectangle-foot2 {
+    width: 80px;
+    height: 15px;
+    background: white;
+    border: solid;
+    transform: rotate(90deg) translate(120%, -750%);
+}
+
+.text-under-robot {
+
+    padding: 25px;
+
+}
+
 
 .flexbox-item-2 {
     width: 400px;
@@ -103,11 +190,55 @@ h2 {
     background-color: white;
     border-style: solid;
     margin: 10px;
-   /* transform: translate(380px, 5px);*/
-  align-self: flex-start;
-    align-content: start;
-    text-align: left;
 
+    align-self: flex-start;
+    align-content: start;
+
+
+}
+
+
+.text-flexitem-2 {
+
+    text-align: left;
+    padding-right: 3%;
+    /*Formatting for multilines*/
+    line-height: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.tooltip-item2 {
+    position: relative;
+    display: inline-block;
+
+}
+
+.text-flexitem-2::first-letter {
+    font-weight:bold;
+}
+
+.tooltip-item2 .tooltiptext-item2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip-item2:hover .tooltiptext-item2 {
+    visibility: visible;
 }
 
 .flexbox-item-3 {
@@ -117,9 +248,61 @@ h2 {
     border-style: solid;
     margin: 10px;
     align-self: center;
-   
+    transform: translateX(-105%);
+
 
 }
+
+
+.text-flexitem-3 {
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 6%;
+    line-height: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+
+
+}
+
+
+.tooltip-item3 {
+    position: relative;
+    display: inline-block;
+
+}
+
+.tooltip-item3 .tooltiptext-item3 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip-item3:hover .tooltiptext-item3 {
+    visibility: visible;
+}
+
+.text-flexitem-3:before {
+        font-style: italic;
+        content: "Paragraph";
+      }
+
+
+
+
 
 .flexbox-item-4 {
     width: 400px;
@@ -127,7 +310,12 @@ h2 {
     background-color: white;
     border-style: solid;
     margin: 10px;
-    /*transform: translate(7px, 275px);*/
+    transform: translateX(-210%);
     align-self: flex-end;
 
+}
+
+.text-flexitem-4{
+text-align: left;
+padding-right: 9%;
 }
