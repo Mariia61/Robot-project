@@ -1,7 +1,32 @@
 #label-create-robot {
     display: block;
     text-align: center;
-    font-size:160%;
+    font-size: 160%;
+}
+
+#name {
+    width: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+ 
+}
+
+.div-name{
+    float: left;
+margin: 10px;
+} 
+.div-type{
+    float: left;
+
+} 
+.div-color{
+    float:left;
+}
+.div-checkboxes{
+    float:left;
+}
+.div-comments{
+    float:left;
 }
 
 .header {
@@ -37,9 +62,15 @@ h2 {
 
 .Form {
     border-style: solid;
+    height: 300px;
 
 
 
+}
+
+.buttons{
+
+    transform: translate(0px, -15px);
 }
 
 .factory-section {
@@ -72,8 +103,8 @@ h2 {
     background-color: white;
     border-style: solid;
     margin: 10px;
-    transform: translate(380px, 5px);
-    position: fixed;
+   /* transform: translate(380px, 5px);*/
+  align-self: flex-start;
     align-content: start;
     text-align: left;
 
@@ -85,8 +116,8 @@ h2 {
     background-color: white;
     border-style: solid;
     margin: 10px;
-    transform: translate(380px, 140px);
-    position: fixed;
+    align-self: center;
+   
 
 }
 
@@ -96,6 +127,7 @@ h2 {
     background-color: white;
     border-style: solid;
     margin: 10px;
-    transform: translate(7px, 275px);
+    /*transform: translate(7px, 275px);*/
+    align-self: flex-end;
 
 }

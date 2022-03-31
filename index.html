@@ -46,16 +46,92 @@
         </div>
     </section>
 
-<br>
-<br>
-<form class= "Form" style="background-color: #DFEDD6;"> 
-<label id="label-create-robot">Create Robot</label>
+    <br>
+    <br>
+
+<!-- FORM  start here*/ -->
+
+    <form class="Form" style="background-color: #DFEDD6;">
+        <label id="label-create-robot">Create Robot</label>
+        <hr>
+        <br>
+
+<!-- Elements start here*/ -->
+        <div class="div-name">
+            <div><label id="label-name" for="name">Name</label> </div>
+            <br>
+            <div> <input type="text" id="name" name="name" placeholder="Robot name"></div>
+        </div>
+
+        <div class="div-type">
+            <div>
+                <label id="label-type">Select type</label>
+            </div>
+            <br>
+            <div>
+                <select name="dropdown" id="dropdown">
+
+                    <option value="Basic-robot">Basic Robot</option>
+                    <option value="Small-robot">Small Robot</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="div-color">
+            <div>
+                <label id="label-select-color" for="color-picker">Select Color</label>
+            </div>
+            <br>
+            <div>
+                <input type="color" id="color-picker" name="color-picker" value="#e96126">
+            </div>
+        </div>
+
+
+        <div class="div-checkboxes">
+            <div>
+                <label id="label-select-options">Select Options</label>
+            </div>
+            <br>
+            <div>
+                <div>
+                    <input type="checkbox" id="checkbox-jump" name="checkbox-jump" value="jump" checked>
+                    <label for="checkbox-jump">can jump</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox-talk" name="checkbox-talk" value="talk" checked>
+                    <label for="checkbox-talk">can talk</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox-blink" name="checkbox-blink" value="blink" checked>
+                    <label for="checkbox-blink">can blink</label>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="div-comments">
+            <div>
+                <label id="label-write-comments" for="">Write Comments</label>
+            </div>
+            <br>
+            <div>
+
+                <textarea id="text-box" name="text-box" rows="3">
+        </textarea>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button type="button-create">Create </button>
+            <button type="button-show">Show Created Robots </button>
+        </div>
 <hr>
-<br>
-<label id="label-name">Name</label>
 
 
-</form>
+
+    </form>
 
 
 
