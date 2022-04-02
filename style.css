@@ -1,33 +1,10 @@
-#label-create-robot {
-    display: block;
-    text-align: center;
-    font-size: 160%;
-}
-
-#name {
-    width: 150px;
-    padding: 12px 20px;
-    margin: 8px 0;
-
-}
-
-
-
 .header {
     position: relative;
     padding-bottom: 100px;
 }
 
-
-h2 {
-    padding-left: 40px;
-
-
-}
-
 .logo {
     position: absolute;
-
 }
 
 .img {
@@ -40,43 +17,15 @@ h2 {
 .img_good_luck {
     float: left;
     margin: -12px 15px 200px 7px;
+    transform: scale(0.7);
 
 }
 
-
-.Form {
-    border-style: solid;
-    height: 300px;
+h2 {
+    padding-left: 40px;
 }
 
-.div-name {
-    float: left;
-    margin: 10px;
-}
-
-.div-type {
-    float: left;
-
-}
-
-.div-color {
-    float: left;
-}
-
-.div-checkboxes {
-    float: left;
-}
-
-.div-comments {
-    float: left;
-}
-
-
-
-.buttons {
-
-    transform: translate(0px, -15px);
-}
+/* CSS for Basic Robot section - Start */
 
 .factory-section {
     height: 500px;
@@ -88,7 +37,7 @@ h2 {
 .content-wrapper {
 
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     height: 400px;
 
 }
@@ -202,7 +151,7 @@ h2 {
 
     text-align: left;
     padding-right: 3%;
-    /*Formatting for multilines*/
+    /*Formatting for multilines of a paragraph*/
     line-height: 2;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -210,7 +159,26 @@ h2 {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     white-space: normal;
+
+
+    /* Text animation of paragraph 1*/
+
+    animation: fadeInAnimation-paragraph1 ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 }
+
+@keyframes fadeInAnimation-paragraph1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .tooltip-item2 {
     position: relative;
@@ -219,7 +187,7 @@ h2 {
 }
 
 .text-flexitem-2::first-letter {
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .tooltip-item2 .tooltiptext-item2 {
@@ -267,7 +235,23 @@ h2 {
     white-space: normal;
 
 
+    /*Text animation paragraph 2*/
+    animation: fadeInAnimation-paragraph2 ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
 }
+
+@keyframes fadeInAnimation-paragraph2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 
 .tooltip-item3 {
@@ -296,12 +280,9 @@ h2 {
 }
 
 .text-flexitem-3:before {
-        font-style: italic;
-        content: "Paragraph";
-      }
-
-
-
+    font-style: italic;
+    content: "Paragraph";
+}
 
 
 .flexbox-item-4 {
@@ -315,7 +296,77 @@ h2 {
 
 }
 
-.text-flexitem-4{
-text-align: left;
-padding-right: 9%;
+.text-flexitem-4 {
+    text-align: left;
+    padding-right: 9%;
+
+
+
+    /*Text animation paragraph 3*/
+    animation: fadeInAnimation-paragraph3 ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fadeInAnimation-paragraph3 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* CSS for Create Robot section - Start */
+
+.Form {
+    border-style: solid;
+    height: 300px;
+}
+
+#label-create-robot {
+    display: block;
+    text-align: center;
+    font-size: 160%;
+}
+
+.div-name {
+    float: left;
+    transform: translate(20%, 0%);
+
+}
+
+.div-type {
+    float: left;
+    transform: translate(80%, 0%);
+
+}
+
+.div-color {
+    float: left;
+    transform: translate(150%, 0%);
+}
+
+.div-options {
+    float: left;
+    transform: translate(200%, 0%);
+}
+
+.div-comments {
+    float: left;
+    transform: translate(180%, 0%);
+}
+
+.comment-class {
+    height: 100px;
+
+}
+
+.buttons {
+
+    transform: translate(-39%, 500%);
 }
