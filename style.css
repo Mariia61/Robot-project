@@ -9,9 +9,10 @@
 
 .img {
     position: absolute;
-    right: 0.625em; /*10px*/
-    width: 16.276041666666668vw; /*250px*/
-    height: 11.204481792717086vh; /*80px*/
+    right: 10px;
+    width: 250px;
+    height: 80px;
+   
 }
 
 .img_good_luck {
@@ -28,7 +29,7 @@ h2 {
 /* CSS for Basic Robot section - Start */
 
 .factory-section {
-    height: 70.0280112044818vh; /*500px*/
+    height: 500px;
     border-style: solid;
     background-color: blanchedalmond;
 
@@ -39,12 +40,12 @@ h2 {
 
     display: flex;
     justify-content: flex-start;
-    height: 56.022408963585434vh; /*400px*/
+    height: 400px;
 
 }
 
 .flexbox-item-1 {
-    width: 27.34375vw; /*420px*/
+    width: 420px;
     background-color: white;
     border-style: solid;
     margin: 10px;
@@ -54,8 +55,8 @@ h2 {
 
 
 .circle-head {
-    width: 5.208333333333333vw; /*80px*/
-    height: 11.204481792717086vh; /*80px*/
+    width: 80px;
+    height: 80px;
     background: white;
     border-radius: 50%;
     border-style: solid;
@@ -64,8 +65,8 @@ h2 {
 }
 
 .circle-eye-1 {
-    width: 0.9765625vw; /*15px*/
-    height: 2.100840336134454vh; /*15px*/
+    width: 15px;
+    height: 15px;
     background: white;
     border-radius: 50%;
     border-style: solid;
@@ -73,12 +74,42 @@ h2 {
 }
 
 .circle-eye-2 {
-    width: 0.9765625vw; /*15px*/
-    height: 2.100840336134454vh; /*15px*/
+    width: 15px;
+    height: 15px;
     background: white;
     border-radius: 50%;
     border-style: solid;
     transform: translate(730%, -1098%);
+}
+
+.mouth {
+    transform: translate(156px,-210px);
+    animation-name: mouthanimation;
+    animation-duration: 1s;
+    animation-iteration-count:2s;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes mouthanimation {
+    from {
+        border-style: solid;
+        
+        background-color: white;
+        height: 10px;
+        width: 25px;
+        border-radius: 50%;
+    }
+
+    to {
+        border-style: solid;
+        background-color: white;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+    }
 }
 
 .trapezoid-body {
@@ -86,15 +117,15 @@ h2 {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     height: 0;
-    width: 3.90625vw; /*60px*/
+    width: 60px;
     transform: rotate(180deg) translate(-120%, -130%);
 
 
 }
 
 .rectangle-hand1 {
-    width: 6.510416666666667vw; /*100px*/
-    height: 2.100840336134454vh; /*15px*/
+    width: 100px;
+    height: 15px;
     background: beige;
     border: solid;
     border-radius: 5px;
@@ -102,8 +133,8 @@ h2 {
 }
 
 .rectangle-hand2 {
-    width: 6.510416666666667vw; /*100px*/
-    height: 2.100840336134454vh; /*15px*/
+    width: 100px;
+    height: 15px;
     background: beige;
     border: solid;
     border-radius: 5px;
@@ -112,37 +143,39 @@ h2 {
 
 
 .rectangle-foot1 {
-    width: 5.208333333333333vw; /*80px*/
-    height: 2.100840336134454vh; /*15px*/
+    width: 80px;
+    height: 15px;
     background: white;
     border: solid;
     transform: rotate(90deg) translate(143%, -543%);
 }
 
 .rectangle-foot2 {
-    width: 5.208333333333333vw; /*80px*/
-    height: 2.100840336134454vh; /*15px*/
+    width: 80px;
+    height: 15px;
     background: white;
     border: solid;
     transform: rotate(90deg) translate(120%, -750%);
 }
 
+
 .text-under-robot {
 
-    padding: 25px;
+    align-self: center;
+
 
 }
 
 
 .flexbox-item-2 {
-    width: 26.041666666666668vw; /*400px*/
-    height: 14.005602240896359vh; /*100px*/
+    width: 400px;
+    height: 100px;
     background-color: white;
     border-style: solid;
     margin: 10px;
 
     align-self: flex-start;
-    align-content: start; 
+    align-content: start;
 
 
 }
@@ -193,7 +226,7 @@ h2 {
 
 .tooltip-item2 .tooltiptext-item2 {
     visibility: hidden;
-    width: 7.8125vw; /*120px*/
+    width: 120px;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -211,8 +244,8 @@ h2 {
 }
 
 .flexbox-item-3 {
-    width: 26.041666666666668vw; /*400px*/
-    height: 14.005602240896359vh; /*100px*/
+    width: 400px;
+    height: 100px;
     background-color: white;
     border-style: solid;
     margin: 10px;
@@ -263,7 +296,7 @@ h2 {
 
 .tooltip-item3 .tooltiptext-item3 {
     visibility: hidden;
-    width: 7.8125vw; /*120px*/
+    width: 120px;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -287,8 +320,8 @@ h2 {
 
 
 .flexbox-item-4 {
-    width: 26.041666666666668vw; /*400px*/
-    height: 14.005602240896359vh; /*100px*/
+    width: 400px;
+    height: 100px;
     background-color: white;
     border-style: solid;
     margin: 10px;
@@ -326,7 +359,8 @@ h2 {
 
 .Form {
     border-style: solid;
-    height: 70.0280112044818vh; /*500px*/
+    height: 500px;
+
 }
 
 #label-create-robot {
