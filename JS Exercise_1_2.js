@@ -15,3 +15,4 @@ function assign_phrase() {
 }
 
 load.addEventListener("load", assign_phrase);
+
