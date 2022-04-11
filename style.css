@@ -7,6 +7,28 @@
     position: absolute;
 }
 
+.ribbon {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    background-color: blanchedalmond;
+    border-right: transparent;
+    
+
+}
+
+.ribbon::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    border-left: 25px solid #193161;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #193161;
+    border-bottom: 25px solid #193161 ;
+
+} 
+
+
 .img {
     position: absolute;
     top: -56%;
@@ -26,20 +48,23 @@
 
 h2 {
     padding-left: 40px;
+
 }
 
 /* CSS for Basic Robot section - Start */
 
 .factory-section {
+
     height: 500px;
     border-style: solid;
     background-color: blanchedalmond;
 
 
+
 }
 
 .content-wrapper {
-
+    /*position: absolute;*/
     display: flex;
     justify-content: flex-start;
     height: 400px;
@@ -220,6 +245,7 @@ h2 {
     display: flex;
     text-align: left;
     padding-right: 3%;
+    padding-left: 2%;
     /*Formatting for multilines of a paragraph*/
     line-height: 2;
     text-overflow: ellipsis;
@@ -296,6 +322,7 @@ h2 {
     text-align: justify;
     text-justify: inter-word;
     padding-right: 6%;
+    padding-left: 2%;
     line-height: 2;
     text-overflow: ellipsis;
     overflow: hidden;
