@@ -14,7 +14,7 @@
 </head>
 
 <body id="body">
-    <!-- onload="timeFunction() -->
+    <!-- onload="timeFunction()"-->
     <header class="header">
         <h1 class="logo" style="color: #193161;">ROBOT FACTORY</h1>
         <a href="https://www.playtech.com/">
@@ -23,8 +23,9 @@
         </a>
     </header>
 
-    <section id="slide-1" class="factory-section" style="background-color:  blanchedalmond;">
-        <h2 style="color: black">BASIC ROBOT</h2>
+    <section class="factory-section" style="background-color:  blanchedalmond;">
+        <!--  <div class="ribbon"> </div> -->
+        <h2 style="color: black;">BASIC ROBOT</h2>
         <div class="content-wrapper">
 
             <div class="flexbox-item-1">
@@ -90,7 +91,7 @@
 
     <!-- FORM  start here*/ -->
 
-    <form class="Form" style="background-color: #DFEDD6;">
+    <form id="robot-form" class="Form" style="background-color: #DFEDD6;">
         <label id="label-create-robot">Create Robot</label>
         <hr style="border-style:solid;">
         <br>
@@ -99,7 +100,7 @@
             <div class="div-name">
                 <div><label id="label-name" for="robot-name">Name</label> </div>
                 <br>
-                <div> <input type="text" id="robot-name" name="robot-name" placeholder="Robot name"></div>
+                <div> <input type="text" id="robot-name" name="robot-name" placeholder="Robot name" required></div>
             </div>
 
             <div class="div-type">
@@ -107,11 +108,11 @@
                     <label id="label-type">Select type</label>
                 </div>
                 <br>
-                <div>
-                    <select name="dropdown" id="dropdown">
-
-                        <option value="Basic-robot">Basic Robot</option>
-                        <option value="Small-robot">Small Robot</option>
+                <div class="drop-downs-options">
+                    <select name="dropdown" id="dropdown" required>
+                        <option value="" selected disabled hidden></option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
                     </select>
                 </div>
             </div>
@@ -122,7 +123,7 @@
                 </div>
                 <br>
                 <div>
-                    <input type="color" id="color-picker" name="color-picker" value="#e96126">
+                    <input type="color" id="color-picker" name="color-picker" value="#e96126" required>
                 </div>
             </div>
 
@@ -150,7 +151,7 @@
             </div>
             <div class="div-comments">
                 <div>
-                    <label id="label-write-comments" for="comment">Write Comments</label>
+                    <label id="label-write-comments" for="comment">Phrase</label>
                 </div>
                 <br>
                 <input class="comment-box" type="text" id="comment" name="comment">
@@ -161,8 +162,8 @@
         </container>
         <container class="form-container-buttons">
 
-            <button type="button">Create </button>
-            <button type="button">Show Created Robots </button>
+            <button id="createNewRobot">Create </button>
+            <button>Show Created Robots </button>
 
         </container>
         <br>
