@@ -13,8 +13,9 @@
 
 </head>
 
-<body id="body">
+<body id="body" onload="hideSection()">
     <!-- onload="timeFunction()"-->
+
     <header class="header">
         <h1 class="logo" style="color: #193161;">ROBOT FACTORY</h1>
         <a href="https://www.playtech.com/">
@@ -23,10 +24,10 @@
         </a>
     </header>
 
-    <section class="factory-section" style="background-color:  blanchedalmond;">
-        <!--  <div class="ribbon"> </div> -->
+    <section id="robotLoadSection" class="factorySection" style="background-color:  blanchedalmond;">
+        <!--<div class="ribbon"> </div> -->
         <h2 style="color: black;">BASIC ROBOT</h2>
-        <div class="content-wrapper">
+        <div class="contentWrapper">
 
             <div class="flexbox-item-1">
                 <div class="trapezoid-body"> </div>
@@ -40,6 +41,7 @@
                 <div class="mouth"> </div>
                 <p class="text-under-robot"> Robot Name </p>
             </div>
+
             <div class="flexbox-item-2">
 
                 <div class="tooltip-item2">
@@ -59,6 +61,7 @@
             </div>
 
             <div class="flexbox-item-3">
+
                 <div class="tooltip-item3">
                     <span class="tooltiptext-item3">Paragraph text here. Text justified, 6% space from right border.
                         Text is only 2
@@ -75,6 +78,7 @@
 
 
             <div class="flexbox-item-4">
+
                 <p class="text-flexitem-4"><img class="img_good_luck" alt="Good Luck image"
                         src="https://us.123rf.com/450wm/aliasching/aliasching1906/aliasching190600002/125493117-good-luck-on-white.jpg?ver=6">
                     Paragpraph text here. Text-align on left, 9% from right border. Image on left side.
@@ -92,15 +96,20 @@
     <!-- FORM  start here*/ -->
 
     <form id="robot-form" class="Form" style="background-color: #DFEDD6;">
+
         <label id="label-create-robot">Create Robot</label>
         <hr style="border-style:solid;">
         <br>
         <container class="form-container-inputs">
             <!-- Elements start here*/ -->
             <div class="div-name">
-                <div><label id="label-name" for="robot-name">Name</label> </div>
+                <div>
+                    <label id="label-name" for="robot-name">Name</label>
+                </div>
                 <br>
-                <div> <input type="text" id="robot-name" name="robot-name" placeholder="Robot name" required></div>
+                <div>
+                    <input type="text" id="robot-name" name="robot-name" placeholder="Robot name" required>
+                </div>
             </div>
 
             <div class="div-type">
@@ -109,7 +118,7 @@
                 </div>
                 <br>
                 <div class="drop-downs-options">
-                    <select name="dropdown" id="dropdown" required>
+                    <select name="dropdown" id="robot-type" required>
                         <option value="" selected disabled hidden></option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
@@ -139,12 +148,12 @@
                         <label for="checkbox-jump">can jump</label>
                     </div>
                     <div>
-                        <input type="checkbox" onchange="onCheckBoxTalkChecked()" id="checkbox-talk"
-                            name="checkboxTalk" value="talk">
+                        <input type="checkbox" onclick="onCheckBoxTalkChecked()" id="checkbox-talk" name="checkboxTalk"
+                            value="talk">
                         <label for="checkbox-talk">can talk</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="checkbox-blink" name="checkbox-blink" value="blink">
+                        <input type="checkbox" id="checkbox-blink" name="checkbox-blink" value="blink" >
                         <label for="checkbox-blink">can blink</label>
                     </div>
 
@@ -152,10 +161,10 @@
             </div>
             <div class="div-comments">
                 <div>
-                    <label id="label-write-comments" for="comment">Phrase</label>
+                    <label id="phraseLabel">Phrase</label>
                 </div>
                 <br>
-                <input class="comment-box" type="text" id="comment" name="comment">
+                <input id="phrase" class="comment-box" type="input" name="comment" disabled >
 
 
             </div>
@@ -163,8 +172,8 @@
         </container>
         <container class="form-container-buttons">
 
-            <button id="createNewRobot">Create </button>
-            <button>Show Created Robots </button>
+            <button type="button" id="createNewRobotButton" onclick="createRobot()">Create </button>
+            <button type="button">Show Created Robots </button>
 
         </container>
         <br>
