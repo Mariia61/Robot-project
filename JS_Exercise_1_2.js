@@ -53,7 +53,7 @@ function createRobot() {
 }
 
 function showRobots() {
-    console.log(robots);
+    console.log(robots[0]);
 }
 
 function hideSection() {
