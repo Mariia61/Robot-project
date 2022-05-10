@@ -38,17 +38,20 @@ function onCheckBoxTalkChecked() {
     }
 }
 
+var namee;
+var gender;
+var color; 
 
 function createRobot(event) {
-    const name = form.querySelector('#robot-name');
-    const select = document.getElementById('robot-type');
-    const type = select.options[select.selectedIndex].value;
-    const color = document.getElementById('#color-picker').value;
+     namee = form.querySelector('#robot-name');
+     type = document.getElementById('robot-type');
+     gender = select.options[select.selectedIndex].value;
+     color = document.getElementById('#color-picker').value;
 
     var robotN = {
-        robot_name: name,
-        color: color,
-        gender: type
+        robot_name: namee,
+        robotColor: color,
+        robotGender: gender
     };
 
     robots.push(robotN);
@@ -59,16 +62,13 @@ function createRobot(event) {
 
 function showRobot(event) {
 
+const section = document.querySelector(".contentWrapper");
+const newDiv= document.createElement("div");
+
+section.appendChild(newDiv);
+
+
     event.preventDefault();
-
-
-
-
-    /*const section = document.querySelector(".contentWrapper");
-    const box = document.querySelector(".flexbox-item-1");
-    section.append(box);
-    */
-
 }
 
 function removeElements() {
