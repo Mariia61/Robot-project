@@ -8,12 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="JS Exercise_1_2.js"></script>
+    <script type="text/javascript" src="Robot.js"></script>
     <title>ROBOT FACTORY</title>
 
 </head>
 
-<body id="body" onload="hideSection()">
+<body id="body" onload="removeElements()">
     <!-- onload="timeFunction()"-->
 
     <header class="header">
@@ -25,7 +25,7 @@
     </header>
 
     <section id="robotLoadSection" class="factorySection" style="background-color:  blanchedalmond;">
-        <!--<div class="ribbon"> </div> -->
+
         <h2 style="color: black;">BASIC ROBOT</h2>
         <div class="contentWrapper">
 
@@ -173,7 +173,7 @@
         <container class="form-container-buttons">
 
             <button type="button" id="createNewRobotButton" onclick="createRobot()">Create </button>
-            <button type="button">Show Created Robots </button>
+            <button type="button" id="showNewRobotButton" onclick="showRobot()">Show Created Robots </button>
 
         </container>
         <br>

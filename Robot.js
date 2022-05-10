@@ -16,11 +16,14 @@ function assign_phrase() {
 load.addEventListener("load", assign_phrase);
 */
 
+
 var robots = [];
 
-var createBtn = document.getElementById("createNewRobotButton");
+const createBtn = document.getElementById("createNewRobotButton");
 createBtn.addEventListener("click", createRobot);
-createBtn.addEventListener("click", showRobots);
+
+const showRobotVariable = document.getElementById("showNewRobotButton");
+showRobotVariable.addEventListener("click", showRobot);
 
 
 
@@ -38,9 +41,9 @@ function onCheckBoxTalkChecked() {
 
 function createRobot(event) {
     const name = form.querySelector('#robot-name');
-    var select = document.getElementById('robot-type');
-    var type = select.options[select.selectedIndex].value;
-    var color = document.getElementById('#color-picker').value;
+    const select = document.getElementById('robot-type');
+    const type = select.options[select.selectedIndex].value;
+    const color = document.getElementById('#color-picker').value;
 
     var robotN = {
         robot_name: name,
@@ -50,18 +53,45 @@ function createRobot(event) {
 
     robots.push(robotN);
 
-    // event.preventDefault();
+    event.preventDefault();
 
 }
 
-function showRobots() {
-   alert(" Robots!")
+function showRobot(event) {
+
+    event.preventDefault();
+
+
+
+
+    /*const section = document.querySelector(".contentWrapper");
+    const box = document.querySelector(".flexbox-item-1");
+    section.append(box);
+    */
+
 }
 
-function hideSection() {
-    const roboSection = document.querySelector('#robotLoadSection');
-    roboSection.style.display = "none";
+function removeElements() {
+
+    var firstItem = document.querySelector('.flexbox-item-1');
+    firstItem.remove();
+
+    const secondItem = document.querySelector('.flexbox-item-2');
+    secondItem.remove();
+
+    const thirdItem = document.querySelector('.flexbox-item-3');
+    thirdItem.remove();
+
+    const fourthItem = document.querySelector('.flexbox-item-4');
+    fourthItem.remove();
+
+
 }
+
+
+
+
+
 
 
 
